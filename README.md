@@ -5,7 +5,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 3:* **Waze,** a driving directions app
 
 # Case Study 1: Automatidata 🔎 
-link here: [Case_study_1: Automatidata](/Case_study_1_Automatidata.jpynb/)
+link here: [Case_study_1: Automatidata](/https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_study_1_Automatidata.ipynb/)
 
 
 
