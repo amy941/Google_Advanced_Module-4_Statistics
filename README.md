@@ -5,18 +5,8 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 3:* **Waze,** a driving directions app
 
 # Case Study 1: Automatidata 🔎 
-<!!!> Link here: ....................
+link here: [Case_study_1_Automatidata.jpynb]()
 
-**1) Goal:** to develop an app that enables NY Taxi and Limo Commission (TLC) riders to estimate the taxi fares in advance.
-
-**2) Scenario:** The data team was assigned to analyze the relationship between fare amounts and payment type. Hypothesis test was conducted in this dataset.
-
-**3) To-do:**
-- Compute descriptive stats
-- Conduct a Hypothesis test
-- Create an executive summary for the stakeholders
-  
-**4) The Analysis:**
 
 
 
