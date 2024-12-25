@@ -21,7 +21,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
      ```
      Use groupby funct. for payment_type (credit card, cash,...) and fare_amount(price), then calc. average fare amount for each group of payment types
 
-     PHOTO
+     ![All Text](D:\2023\Coursera\GOOGLE ADVANCED DATA ANALYTICS\Module 4_Statistics\lab n project\assets)
 
      Payment_type: 1-Credit card, 2-Cash. The table shows credit card users tend to pay more than cash users, 13.4$ and 12.2$, respectively.
      
