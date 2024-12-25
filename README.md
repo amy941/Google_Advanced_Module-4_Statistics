@@ -25,7 +25,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 
      ![avg mean](https://github.com/user-attachments/assets/1c9d15bb-1da5-43a8-816d-22337b4468da)
 
-     *Payment_type: 1-Credit card, 2-Cash. **The table shows credit card users tend to pay more than cash users**, 13.4$ and 12.2$, respectively.*
+     *Payment_type:* 1-Credit card, 2-Cash. **The table shows credit card users tend to pay more than cash users**, *13.4$ and 12.2$, respectively.*
      
 
   **2) Conduct Hypothesis test and A/B test:**
