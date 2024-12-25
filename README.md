@@ -7,10 +7,25 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - **Link here:** [Case_study_1: Automatidata](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_study_1_Automatidata.ipynb)
 - **What I Learned:**
   1) Compute a descriptive stats:
-     Use **.head()**, **.describe()**, to take a glimpse at the big data and see what it give us before proceeding.
+     Firstr, take a glimpse at the big data and see what it give us before proceeding. The following functions are used:
+     **pandas:** .describe(), .head(), .shape
+     **numpy:** .mean()
+     
      ``` python
      taxi_data.describe(include='all')
      ```
+     shows mean, min/max, interquartile, etc.
+
+     ```python
+     taxi_data.groupby('payment_type')['fare_amount'].mean()
+     ```
+     Use groupby funct. for payment_type (credit card, cash,...) and fare_amount(price), then calc. average fare amount for each group of payment types
+
+     PHOTO
+
+     Payment_type: 1-Credit card, 2-Cash. The table shows credit card users tend to pay more than cash users, 13.4$ and 12.2$, respectively.
+     
+
   3) Conduct Hypothesis test and A/B test:
   4) Provide insights to stakeholders: 
 
