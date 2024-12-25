@@ -3,7 +3,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 1:* **Automatidata,** a fictional data consulting firm
 - *Case Study 2:* **TikTok,** a short-form video hosting firm
 
-# Case Study 1: Automatidata 🔎 
+# Case Study 1: Automatidata 🚕
 - link here: [Case_study_1: Automatidata](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_study_1_Automatidata.ipynb)
 - Analysis and Insights:
   1) Compute a descriptive stats:
