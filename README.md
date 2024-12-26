@@ -9,7 +9,10 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 ## Scenario: 
 New York taxi and Limousine Commission (TLC) has approached the data consulting firm Automatidata to develop an app that enables TLC riders to estimate the taxi fares in advance of their ride. TLC reached out to data team at Automatidata to assist them answer these key questions:
 - Is there a relationship between **fare amount** and **payment type**?
-- Discover if customers who use credit cards pay higher fare amounts than customers who use cash. From then, suggest to optimal payments that can generate revenue for cab drivers. 
+- Do customers who use credit card pay higher fare amounts than customers who use cash?
+- What sort of payment would help increase revenue for cab drivers?
+  
+At the end of this project, TLC will get actionable insights on how to enhance rider and driver experiences while optimizing revenue generation. 
 
 ## What I Learned:
   
