@@ -16,6 +16,8 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
  taxi_data.describe(include='all')
  ```
 
+![avg mean](https://github.com/user-attachments/assets/1c9d15bb-1da5-43a8-816d-22337b4468da)
+
 ✍ *.describe()* generates the table with basic descriptive stats: mean, std deviation, min/max, interquartile, etc.
      
      
