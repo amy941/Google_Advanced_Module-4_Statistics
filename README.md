@@ -41,13 +41,28 @@ cash = taxi_data[taxi_data['payment_type'] == 2]['fare_amount']
 ```
 ✍ Firstly, assigned variables, one for Credit Card and one for Cash.
 
-Then, the condition ```taxi_data['payment_type'] == 1``` checks if the payment type for a taxi ride is a **credit card** since **1** is assigned for credit card payment. It returns **True** for rows where the payment is **1** (credit card), and **False** for all other rows.
+Then, created **BOOLEAN** ```taxi_data['payment_type'] == 1``` checks if the payment type for a taxi ride is a **credit card** since **1** is assigned for credit card payment. It returns **True** for rows where the payment is **1** (credit card), and **False** for all other rows.
 
-Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTIRE dataset ```taxi_data``` to include only rows where payment type is **1**. It selects all the rows where customers used credit card to pay.
+Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTIRE dataset ```taxi_data``` to include only rows where payment type is **1** (True). It selects all the rows where customers used credit card to pay.
 
 Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
 
-Similar for Cash payment.
+Similar approach for Cash payment.
+
+```python
+stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
+```
+Hypothesis testing: 
+
+**NULL hypothesis:** There is **no difference** in *the average fare amount* between customers who use credit cards and customers who use cash.
+
+**ALTERNATIVE hypothesis:** There is **a difference** in *the average fare amount* between customers who use credit cards and customers who use cash.
+
+✍ Proceed with a two-sample t-test to compute p-value given 5% as the significant level.
+
+Set ```equal_var=False``` because we don't want the 2 samples have the same variance.
+
+Result shows p-value is extremely small which is significantly less than signigicant level 5%. Thus, we can confidently draw a conclusion to reject the NULL hypothesis. 
 
 **3) Provide insights to stakeholders:** 
 
