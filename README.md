@@ -74,7 +74,7 @@ Set ```equal_var=False``` because we don't want the 2 samples have the same vari
 
 
 # Tools I used:
-**Python, GitHub**
+**Python, Jupyter Notebook, GitHub**
 
 # Conclusions:
 
