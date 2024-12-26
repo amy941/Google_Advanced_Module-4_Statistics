@@ -32,7 +32,6 @@ taxi_data.groupby('payment_type')['fare_amount'].mean()
    
 We're interested in payment_type: 1-Credit card and 2-Cash. **The table shows credit card users tend to pay more than cash users**, $13.4 and $12.2, respectively.     
  
- 
 **2) Conduct Hypothesis test and A/B test:**
 
 ```python
