@@ -60,13 +60,13 @@ Set ```equal_var=False``` because we don't want the 2 samples have the same vari
 
 **3) Provide insights to stakeholders:** 
 
- ### Hypothesis testing: 
+**Hypothesis testing:** 
 
 - **NULL hypothesis:** There is **no difference** in the average fare amount between customers who use credit cards and customers who use cash.
 
 - **ALTERNATIVE hypothesis:** There is **a difference** in the average fare amount between customers who use credit cards and customers who use cash.
 
-Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by **encouraging customers to pay with credit card** instead of cash. 
+✍ Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by **encouraging customers to pay with credit card** instead of cash. 
 
 
 # Case Study 2: TikTok 🎵
