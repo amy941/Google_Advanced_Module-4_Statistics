@@ -17,7 +17,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
      ``` python
      taxi_data.describe(include='all')
      ```
-     ![describe()](https://github.com/user-attachments/assets/9b3dcf70-2f0c-41a5-9a3a-80af6de01a19)
+     ..........................................
   
      ✍ *.describe()* generates the table with basic descriptive stats: mean, std deviation, min/max, interquartile, etc.
 
@@ -26,7 +26,7 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
      ```
      ✍ Use *.groupby()* to compute the mean value of fare_amount(price) for each group of payment_type (credit card, cash,...) in the sample data, then calc. average fare amount for each group of payment types.
 
-     ![avg mean](https://github.com/user-attachments/assets/1c9d15bb-1da5-43a8-816d-22337b4468da)
+     ............................
 
      ✍ *(1: Credit card, 2: Cash, 3: No charge, 4: Dispute, 5: Unknown)*
   
