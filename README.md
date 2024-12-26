@@ -64,12 +64,9 @@ stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
 
 Set ```equal_var=False``` because we don't want the 2 samples have the same variance.
 
-Result shows **p-value** is extremely small which is significantly less than signigicant level 5%. Thus, we can confidently draw a conclusion to **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by encouraging customers to pay credit card instead of cash. 
-
 **3) Provide insights to stakeholders:** 
 
-
-
+Result shows **p-value** is extremely small, significantly less than the 5% signigicant level. Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by encouraging customers to pay with credit card instead of cash. 
 
 
 # Case Study 2: TikTok 🎵
