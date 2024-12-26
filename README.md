@@ -9,13 +9,17 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 ## What I Learned:
   
   **1) Compute a descriptive stats:**
-     First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used: 
-     **pandas:** .describe(), .head(), .shape 
-     **numpy:** .mean()
+     First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used:
+     **pandas:** .describe(), .head(), .shape | **numpy:** .mean()
+
+ ```python
+ taxi_data.describe(include='all')
+ ```
+
+✍ *.describe()* generates the table with basic descriptive stats: mean, std deviation, min/max, interquartile, etc.
      
-     ```python
-     taxi_data.describe(include='all')
-     ```
+     
+    
      
   
  
