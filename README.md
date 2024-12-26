@@ -9,28 +9,16 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 ## What I Learned:
   
   **1) Compute a descriptive stats:**
-     First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used:
-  
-     **pandas:** .describe(), .head(), .shape | **numpy:** .mean()
+     First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used: 
+     **pandas:** .describe(), .head(), .shape 
+     **numpy:** .mean()
      
-     ``` python
+     ```python
      taxi_data.describe(include='all')
      ```
-     ..........................................
-  
-     ✍ *.describe()* generates the table with basic descriptive stats: mean, std deviation, min/max, interquartile, etc.
-
-     ```python
-     taxi_data.groupby('payment_type')['fare_amount'].mean()
-     ```
-     ✍ Use *.groupby()* to compute the mean value of fare_amount(price) for each group of payment_type (credit card, cash,...) in the sample data, then calc. average fare amount for each group of payment types.
-
-     ............................
-
-     ✍ *(1: Credit card, 2: Cash, 3: No charge, 4: Dispute, 5: Unknown)*
-  
-  Payment_type: 1-Credit card and 2-Cash. **The table shows credit card users tend to pay more than cash users**, $13.4 and $12.2, respectively.
      
+  
+ 
 
   **2) Conduct Hypothesis test and A/B test:**
 
