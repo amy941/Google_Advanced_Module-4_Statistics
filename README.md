@@ -4,15 +4,14 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 2:* **TikTok,** a short-form video hosting firm
 
 # Case Study 1: Automatidata 🚕
-## Link here: [Case_study_1: Automatidata]
+## Link here: [Case_study_1: Automatidata](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_Study_1_%20Automatidata.ipynb)
 
 ## What I Learned:
   
   **1) Compute a descriptive stats:**
      First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used:
   
-     **pandas:** .describe(), .head(), .shape | 
-     **numpy:** .mean()
+     **pandas:** .describe(), .head(), .shape | **numpy:** .mean()
      
      ``` python
      taxi_data.describe(include='all')
