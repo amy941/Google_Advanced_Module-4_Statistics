@@ -47,26 +47,26 @@ Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTI
 
 Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
 
-Similar approach for Cash payment.
+*Similar approach for Cash payment.*
 
 ```python
 stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
 ```
 ![p-value](https://github.com/user-attachments/assets/68576db6-f04d-4428-8611-4c9f6fdeca0e)
 
-### Hypothesis testing: 
-
-**NULL hypothesis:** There is **no difference** in *the average fare amount* between customers who use credit cards and customers who use cash.
-
-**ALTERNATIVE hypothesis:** There is **a difference** in *the average fare amount* between customers who use credit cards and customers who use cash.
-
-✍ Proceed with a two-sample t-test to compute p-value given 5% as the significant level.
+✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level.
 
 Set ```equal_var=False``` because we don't want the 2 samples have the same variance.
 
 **3) Provide insights to stakeholders:** 
 
-Result shows **p-value** is extremely small, significantly less than the 5% signigicant level. Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by encouraging customers to pay with credit card instead of cash. 
+ ### Hypothesis testing: 
+
+- **NULL hypothesis:** There is **no difference** in the average fare amount between customers who use credit cards and customers who use cash.
+
+- **ALTERNATIVE hypothesis:** There is **a difference** in the average fare amount between customers who use credit cards and customers who use cash.
+
+Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in the average fare amount between customers who use credit cards and customers who use cash. Furthermore, drivers can increase revenue by **encouraging customers to pay with credit card** instead of cash. 
 
 
 # Case Study 2: TikTok 🎵
