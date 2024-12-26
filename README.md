@@ -4,11 +4,11 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 2:* **TikTok,** a short-form video hosting firm
 
 # Case Study 1: Automatidata 🚕
-- **Link here:** [Case_study_1: Automatidata](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_study_1_Automatidata.ipynb)
-- **What I Learned:**
+**Link here:** [Case_study_1: Automatidata]
+**What I Learned:**
   
   **1) Compute a descriptive stats:**
-     First, take a glimpse at the big data and see what it give us before proceeding. The following functions are used:
+     First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used:
   
      **pandas:** .describe(), .head(), .shape | 
      **numpy:** .mean()
@@ -18,16 +18,18 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
      ```
      ![describe()](https://github.com/user-attachments/assets/9b3dcf70-2f0c-41a5-9a3a-80af6de01a19)
   
-     ✍ shows mean, min/max, interquartile, etc.
+     ✍ *.describe()* generates the table with basic descriptive stats: mean, std deviation, min/max, interquartile, etc.
 
      ```python
      taxi_data.groupby('payment_type')['fare_amount'].mean()
      ```
-     ✍ Use groupby funct. for payment_type (credit card, cash,...) and fare_amount(price), then calc. average fare amount for each group of payment types.
+     ✍ Use *.groupby()* to compute the mean value of fare_amount(price) for each group of payment_type (credit card, cash,...) in the sample data, then calc. average fare amount for each group of payment types.
 
      ![avg mean](https://github.com/user-attachments/assets/1c9d15bb-1da5-43a8-816d-22337b4468da)
 
-     ✍ Payment_type:* 1-Credit card, 2-Cash. **The table shows credit card users tend to pay more than cash users**, 13.4$ and 12.2$, respectively.
+     ✍ *(1: Credit card, 2: Cash, 3: No charge, 4: Dispute, 5: Unknown)*
+  
+  Payment_type: 1-Credit card and 2-Cash. **The table shows credit card users tend to pay more than cash users**, $13.4 and $12.2, respectively.
      
 
   **2) Conduct Hypothesis test and A/B test:**
