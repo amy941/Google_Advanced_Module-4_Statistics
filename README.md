@@ -46,7 +46,7 @@ Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTI
 
 Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
 
-**<!!!>** Similar approach for Cash payment.
+🔁 Similar approach for Cash payment.
 
 ```python
 stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
