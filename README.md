@@ -6,6 +6,11 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 # Case Study 1: Automatidata 🚕
 ## Link here: [Case_study_1: Automatidata](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_Study_1_%20Automatidata.ipynb)
 
+## Scenario: 
+New York taxi and Limousine Commission (TLC) has approached the data consulting firm Automatidata to develop an app that enables TLC riders to estimate the taxi fares in advance of their ride. TLC reached out to data team at Automatidata to assist them answer these key questions:
+- Is there a relationship between **fare amount** and **payment type**?
+- Discover if customers who use credit cards pay higher fare amounts than customers who use cash. From then, suggest to optimal payments that can generate revenue for cab drivers. 
+
 ## What I Learned:
   
 **1) Compute a descriptive stats:**
