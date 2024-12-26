@@ -41,11 +41,11 @@ cash = taxi_data[taxi_data['payment_type'] == 2]['fare_amount']
 ```
 ✍ Firstly, assigned variables, one for Credit Card and one for Cash.
 
-Then, the subset ```taxi_data['payment_type'] == 1``` checks if the payment type for a taxi ride is a **credit card** as **1** is assigned for credit card payment. The condition returns **True** for rows where the payment is **1** (credit card), and **False** for all other rows.
+Then, the condition ```taxi_data['payment_type'] == 1``` checks if the payment type for a taxi ride is a **credit card** since **1** is assigned for credit card payment. It returns **True** for rows where the payment is **1** (credit card), and **False** for all other rows.
 
-Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters ```taxi_data``` to include only rows where payment type is **1**. It selects all the rows where customers used credit card to pay.
+Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTIRE dataset ```taxi_data``` to include only rows where payment type is **1**. It selects all the rows where customers used credit card to pay.
 
-Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` picks the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card.
+Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
 
 Similar for Cash payment.
 
