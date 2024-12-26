@@ -4,9 +4,9 @@ Little did I know that Statistics is the backbone in data 😅 In this end-of-co
 - *Case Study 2:* **TikTok,** a short-form video hosting firm
 
 # Case Study 1: Automatidata 🚕
-**Link here:** [Case_study_1: Automatidata]
+## Link here: [Case_study_1: Automatidata]
 
-**What I Learned:**
+## What I Learned:
   
   **1) Compute a descriptive stats:**
      First, take a glimpse at the big data to understand how the dataset is structured before proceeding. The following functions are used:
