@@ -52,6 +52,8 @@ Similar approach for Cash payment.
 ```python
 stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
 ```
+![p-value](https://github.com/user-attachments/assets/68576db6-f04d-4428-8611-4c9f6fdeca0e)
+
 ### Hypothesis testing: 
 
 **NULL hypothesis:** There is **no difference** in *the average fare amount* between customers who use credit cards and customers who use cash.
