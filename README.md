@@ -32,7 +32,7 @@ First, take a glimpse at the big data to understand how the dataset is structure
 ```python
 taxi_data.groupby('payment_type')['fare_amount'].mean()
 ```
-✍ Use *.groupby()* to compute the mean value of fare_amount(price) for each group of payment_type (credit card, cash,...) in the sample data.
+✍ Use *.groupby()* and *.mean()* to compute the mean value of **fare_amount(price)** for each group of **payment_type** (credit card, cash,...) in the sample data.
 
 ![avg mean](https://github.com/user-attachments/assets/1c9d15bb-1da5-43a8-816d-22337b4468da)   
 
@@ -114,14 +114,52 @@ Table shows:
 ```python
 data = data.dropna(axis=0)
 ```
-✍ 
+✍ To further clean up the dataset, *.dropna(axis=0)* is used to drop rows with missing values from previous step. Then, we use *.head()* to displace the new set of data after cleaning.
 
+![describe()_after clean_tiktok](https://github.com/user-attachments/assets/17479257-7c52-4b3d-be4c-64a128abbbdf)
+
+Table above shows the finalize dataset after cleaning. 
+
+```python
+data.groupby("verified_status")["video_view_count"].mean()
+```
+![mean()_tiktok](https://github.com/user-attachments/assets/dbf5a15f-33c6-42f6-b406-7a09c35d44ee)
+
+✍ We're intested in the relationship between ```verified_status``` and ```video_view_count```. Use *.groupby()* and *.mean()* to compute the average of **video_view_count** for each group of **verified_status** in the sample data.
+The output of the code shows **not_verified_videos has more views than verified_videos,** 265663 views vs. 91439 views, respectively.
 
 
 **2) Conduct Hypothesis test and A/B test:**
+```python
+# Save each sample in a variable
+not_verified = data[data["verified_status"] == "not verified"]["video_view_count"]
+verified = data[data["verified_status"] == "verified"]["video_view_count"]
+
+# t-test
+stats.ttest_ind(a=not_verified, b=verified, equal_var=False)
+```
+
+✍ Similar approach as Case Study 1, 
+- First, assigned variables, one for 'not_verified', one for 'verified'
+- Then, ```data['verified_status] == "not_verified"``` used to identify rows where verified_status contains "not verified".
+- Next, ```data[data['verified_status] == "not_verified"``` filter the whole dataset. Keep only rows where the condition is ```True```
+- Finally, ```[video_view_count]``` used to extract the video_view_count column from the filtered rows.
+
+🔁 Do the same for ```verifed`` case.
+
+![p-value_tiktok](https://github.com/user-attachments/assets/075c9797-6d26-43b5-824b-6106231f7a4a)
+
+✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level. After excecuting code, p-value is (2.61e^-118)%, negligible!
 
 **3) Provide insights to stakeholders:** 
 
+**Hypothesis testing:** 
+
+- **NULL hypothesis:** There is **no difference** in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts
+
+- **ALTERNATIVE hypothesis:** There is **a difference** in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts .
+
+✍ Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts. This issue could cause due to clickbait videos or spam bots that plummets the view counts. 
 
 # Tools I used:
 **Python, Jupyter Notebook, GitHub**
