@@ -176,6 +176,7 @@ The end-of-course portfolio projects reinforced my data analysis skills in:
 - Importing relevant packages,
 - Conducting descriptive summary to explore the project data,
 - Implementing hypothesis test and A/B test,
+- Interpreting statistical analyses using Python,
 - Sharing meaningful insights and ideas with stakeholders.
   
 # Closing Thoughts:
