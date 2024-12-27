@@ -159,7 +159,7 @@ stats.ttest_ind(a=not_verified, b=verified, equal_var=False)
 
 - **ALTERNATIVE hypothesis:** There is **a difference** in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts .
 
-✍ Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts. This issue could cause due to clickbait videos or spam bots that plummets the view counts. 
+✍ Result shows **p-value is extremely small, significantly less than the 5% signigicant level.** Thus, we can confidently **reject the NULL hypothesis**, meaning there is a difference in number of views between TikTok videos posted by verified accounts vs. TikTok videos posted by unverified accounts. This issue could cause due to clickbait videos or spam bots that spikes the view counts. 
 
 # Tools I used:
 **Python, Jupyter Notebook, GitHub**
