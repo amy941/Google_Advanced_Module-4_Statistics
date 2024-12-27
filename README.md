@@ -108,10 +108,13 @@ data.isna().sum()
 
 
 Table shows:
-- Columns WITH missing values: value of 0, ```claim_status```, ```video_transcription_text```, etc.
-- Columns WITHOUT missing values: value of 298, ```video_id```, ```video_duration_sec```, etc.
+- Columns WITH missing values: value of 298 (means 298 missing values), ```claim_status```, ```video_transcription_text```, etc.
+- Columns WITHOUT missing values: value of 0 (means 0 missing value), ```video_id```, ```video_duration_sec```, etc.
 
-
+```python
+data = data.dropna(axis=0)
+```
+✍ 
 
 
 
