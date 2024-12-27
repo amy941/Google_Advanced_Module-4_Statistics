@@ -77,8 +77,23 @@ Set ```equal_var=False``` because we don't want the 2 samples have the same vari
 
 
 # Case Study 2: TikTok 🎵
+## Link here: 
 
+## Scenario: 
+TikTok is working on the development of a predictive model that can determine whether a video contains a claim or offers an opinion. TikTok'data team has been asked to investigate TikTok's user claim dataset to determine which hypothesis testing method best serves the data and the claims classification project. Questions to be answered are:
 
+- Do videos from verified accounts and videos unverified accounts have different average view counts?
+- Is there a relationship between the account being verified and the associated videos' view counts?
+  
+By answering these 2 questions, TikTok's data team can discover the patterns in TikTok user claim dataset that could influence or inform the development of the predictive model.
+
+## What I Learned:
+
+**1) Compute a descriptive stats:**
+
+**2) Conduct Hypothesis test and A/B test:**
+
+**3) Provide insights to stakeholders:** 
 
 
 # Tools I used:
