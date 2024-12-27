@@ -90,6 +90,15 @@ By answering these 2 questions, TikTok's data team can discover the patterns in 
 ## What I Learned:
 
 **1) Compute a descriptive stats:**
+A quick overview of the content and structure of a dataset before proceeding. The following functions are used:
+
+**pandas:** .describe(), .head() | **numpy:** .mean()
+
+```python
+data.describe(include= 'all')
+```
+
+
 
 **2) Conduct Hypothesis test and A/B test:**
 
