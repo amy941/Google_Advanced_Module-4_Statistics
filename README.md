@@ -92,11 +92,26 @@ By answering these 2 questions, TikTok's data team can discover the patterns in 
 **1) Compute a descriptive stats:**
 A quick overview of the content and structure of a dataset before proceeding. The following functions are used:
 
-**pandas:** .describe(), .head() | **numpy:** .mean()
+**pandas:** .describe(), .head(), .isna() | **numpy:** .mean()
 
 ```python
 data.describe(include= 'all')
 ```
+![describe()_tiktok](https://github.com/user-attachments/assets/3ada81fd-1977-4bb2-b4c6-e6ef899a9347)
+
+```python
+data.isna().sum()
+```
+![isna()_tiktok](https://github.com/user-attachments/assets/d2d6a6f3-6cc3-42f4-b438-4adfb13471e0)
+
+✍ Cleaning dataset: *.isna()* stands for **is NaN** (is Not-a-Number, means data is missing). It's used to check and handle missing values in a dataset.
+
+
+Table shows:
+- Columns WITH missing values: value of 0, ```claim_status```, ```video_transcription_text```, etc.
+- Columns WITHOUT missing values: value of 298, ```video_id```, ```video_duration_sec```, etc.
+
+
 
 
 
