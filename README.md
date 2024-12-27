@@ -39,6 +39,8 @@ taxi_data.groupby('payment_type')['fare_amount'].mean()
 ✍*1-Credit card, 2-Cash, 3-No charge, 4: Dispute, 5-Unknown*
    
 We're interested in payment_type: 1-Credit card and 2-Cash. **The table shows credit card users tend to pay more than cash users**, $13.4 and $12.2, respectively.     
+
+ ---
  
 **2) Conduct Hypothesis test and A/B test:**
 
@@ -64,6 +66,8 @@ stats.ttest_ind(a=credit_card, b=cash, equal_var=False)
 ✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level.
 
 Set ```equal_var=False``` because we don't want the 2 samples have the same variance.
+
+---
 
 **3) Provide insights to stakeholders:** 
 
@@ -128,6 +132,7 @@ data.groupby("verified_status")["video_view_count"].mean()
 ✍ We're intested in the relationship between ```verified_status``` and ```video_view_count```. Use *.groupby()* and *.mean()* to compute the average of **video_view_count** for each group of **verified_status** in the sample data.
 The output of the code shows **not_verified_videos has more views than verified_videos,** 265663 views vs. 91439 views, respectively.
 
+---
 
 **2) Conduct Hypothesis test and A/B test:**
 ```python
@@ -150,6 +155,8 @@ stats.ttest_ind(a=not_verified, b=verified, equal_var=False)
 ![p-value_tiktok](https://github.com/user-attachments/assets/075c9797-6d26-43b5-824b-6106231f7a4a)
 
 ✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level. After excecuting the code, p-value is (2.61e^-118)%, negligible!
+
+---
 
 **3) Provide insights to stakeholders:** 
 
