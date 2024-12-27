@@ -77,7 +77,7 @@ Set ```equal_var=False``` because we don't want the 2 samples have the same vari
 
 
 # Case Study 2: TikTok 🎵
-## Link here: 
+## Link here: [Case_study_2: TikTok](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_Study_2_TikTok.ipynb)
 
 ## Scenario: 
 TikTok is working on the development of a predictive model that can determine whether a video contains a claim or offers an opinion. TikTok'data team has been asked to investigate TikTok's user claim dataset to determine which hypothesis testing method best serves the data and the claims classification project. Questions to be answered are:
