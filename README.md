@@ -52,7 +52,7 @@ Then, created **BOOLEAN** ```taxi_data['payment_type'] == 1``` checks if the pay
 
 Next, ```taxi_data[taxi_data['payment_type'] == 1```, this part filters the ENTIRE dataset ```taxi_data``` to include only rows where payment type is **1** (True). It selects all the rows where customers used credit card to pay.
 
-Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fair amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
+Finally, after filtering data for ONLY credit card payment, ```['fare_amount']``` extracts the columns that contain the fare amount for the selected rows. It gives you just the fare amounts for rides where the payment was made using a credit card ONLY.
 
 🔁 Similar approach for Cash payment.
 
@@ -80,7 +80,7 @@ Set ```equal_var=False``` because we don't want the 2 samples have the same vari
 ## Link here: [Case_study_2: TikTok](https://github.com/amy941/Google_Advanced_Module-4_Statistics/blob/main/Case_Study_2_TikTok.ipynb)
 
 ## Scenario: 
-TikTok is working on the development of a predictive model that can determine whether a video contains a claim or offers an opinion. TikTok'data team has been asked to investigate TikTok's user claim dataset to determine which hypothesis testing method best serves the data and the claims classification project. Questions to be answered are:
+TikTok is working on the development of a predictive model that can determine whether a video contains a claim or offers an opinion. TikTok's data team has been asked to investigate TikTok's user claim dataset to determine which hypothesis testing method best serves the data and the claims classification project. Questions to be answered are:
 
 - Do videos from verified accounts and videos unverified accounts have different average view counts?
 - Is there a relationship between the account being verified and the associated videos' view counts?
@@ -118,7 +118,7 @@ data = data.dropna(axis=0)
 
 ![describe()_after clean_tiktok](https://github.com/user-attachments/assets/17479257-7c52-4b3d-be4c-64a128abbbdf)
 
-Table above shows the finalize dataset after cleaning. 
+Table above shows the finalized dataset after cleaning. 
 
 ```python
 data.groupby("verified_status")["video_view_count"].mean()
@@ -141,15 +141,15 @@ stats.ttest_ind(a=not_verified, b=verified, equal_var=False)
 
 ✍ Similar approach as Case Study 1, 
 - First, assigned variables, one for 'not_verified', one for 'verified'
-- Then, ```data['verified_status] == "not_verified"``` used to identify rows where verified_status contains "not verified".
-- Next, ```data[data['verified_status] == "not_verified"``` filter the whole dataset. Keep only rows where the condition is ```True```
-- Finally, ```[video_view_count]``` used to extract the video_view_count column from the filtered rows.
+- Then, ```data['verified_status] == "not_verified"``` is used to identify rows where verified_status contains "not verified".
+- Next, ```data[data['verified_status] == "not_verified"``` filters the whole dataset. Keep only rows where the condition is ```True```
+- Finally, ```[video_view_count]``` is used to extract the video_view_count column from the filtered rows.
 
-🔁 Do the same for ```verifed`` case.
+🔁 Do the same for "verifed" case.
 
 ![p-value_tiktok](https://github.com/user-attachments/assets/075c9797-6d26-43b5-824b-6106231f7a4a)
 
-✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level. After excecuting code, p-value is (2.61e^-118)%, negligible!
+✍ Proceed with a **two-sample t-test** to compute p-value given 5% as the significant level. After excecuting the code, p-value is (2.61e^-118)%, negligible!
 
 **3) Provide insights to stakeholders:** 
 
@@ -165,6 +165,11 @@ stats.ttest_ind(a=not_verified, b=verified, equal_var=False)
 **Python, Jupyter Notebook, GitHub**
 
 # Conclusions:
-
+The end-of-course portfolio projects reinforced my data analysis skills in:
+- Importing relevant packages,
+- Conducting descriptive summary to explore the project data,
+- Implementing hypothesis test and A/B test,
+- Sharing meaningful insights and ideas with stakeholders.
+  
 # Closing Thoughts:
 Statistics is tough 🙃 It took me over a month to get the hang of the basics (very basic). Regardless, I think I'm in a better place than I was last month 🐌🐌🐌
